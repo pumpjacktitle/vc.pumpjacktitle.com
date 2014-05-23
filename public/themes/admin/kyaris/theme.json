@@ -1,0 +1,7 @@
+{
+	"name":        "Kyaris Admin Theme",
+	"slug":        "admin::kyaris",
+	"description": "Kyaris styled admin theme.",
+	"author":      "Daniel Berry",
+	"version":     "1.0"
+}
