@@ -36,6 +36,8 @@ App::after(function($request, $response)
 Route::filter('auth', function()
 {
 	if (Auth::guest()) return Redirect::guest('login')->withErrors(Lang::get('general.not_logged_in'));
+
+	View::share('me', Sentry::getUser());
 });
 
 
