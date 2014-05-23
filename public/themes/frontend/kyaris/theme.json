@@ -1,0 +1,7 @@
+{
+	"name":        "Kyaris Frontend Theme",
+	"slug":        "frontend::kyaris",
+	"description": "Kyaris styled frontend theme.",
+	"author":      "Daniel Berry",
+	"version":     "1.0"
+}
