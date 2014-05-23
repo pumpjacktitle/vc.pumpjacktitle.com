@@ -2142,12 +2142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7481b32fbfc6cdf17be193cdf79ebbf9288cb599"
+                "reference": "d7520069c61f7cad54351532b2d2bad17af1f059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7481b32fbfc6cdf17be193cdf79ebbf9288cb599",
-                "reference": "7481b32fbfc6cdf17be193cdf79ebbf9288cb599",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d7520069c61f7cad54351532b2d2bad17af1f059",
+                "reference": "d7520069c61f7cad54351532b2d2bad17af1f059",
                 "shasum": ""
             },
             "require": {
@@ -2250,7 +2250,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-05-20 13:22:03"
+            "time": "2014-05-23 15:01:02"
         },
         {
             "name": "leafo/scssphp",
@@ -4752,12 +4752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "bd6ab7a7e5691f531b2617f55359217dc3c0c10c"
+                "reference": "17bc11b13f264299126f1928cc500cd635c0d1ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/bd6ab7a7e5691f531b2617f55359217dc3c0c10c",
-                "reference": "bd6ab7a7e5691f531b2617f55359217dc3c0c10c",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/17bc11b13f264299126f1928cc500cd635c0d1ab",
+                "reference": "17bc11b13f264299126f1928cc500cd635c0d1ab",
                 "shasum": ""
             },
             "require": {
@@ -4818,7 +4818,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-22 21:04:05"
+            "time": "2014-05-23 14:00:26"
         },
         {
             "name": "symfony/process",
