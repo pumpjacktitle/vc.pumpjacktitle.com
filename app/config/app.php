@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'ZQVPIT7cE9cHdH7fITF1jz1jQDSdmsa0',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -130,6 +130,8 @@ return array(
 
 		'Platform\Installer\Laravel\InstallerServiceProvider',
 		'Platform\Foundation\Laravel\PlatformServiceProvider',
+
+		'Kyaris\Platform\PlatformServiceProvider'
 
 	),
 
