@@ -33,6 +33,14 @@
 		{
 			"type": "composer",
 			"url": "http://packages.cartalyst.com"
+		},
+		{
+			"type": "vcs",
+			"url": "git@gitlab.kyaris.com:kyaris-platform/platform.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@gitlab.kyaris.com:kyaris-platform/users-extension.git"
 		}
 	],
 	"require": {
@@ -48,7 +56,10 @@
 		"platform/operations": "dev-master",
 		"platform/pages": "dev-master",
 		"platform/settings": "dev-master",
-		"platform/users": "dev-master"
+		"platform/users": "dev-master",
+
+		"kyaris/platform": "dev-master",
+		"kyaris/users": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
