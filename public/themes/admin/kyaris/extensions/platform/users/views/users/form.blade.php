@@ -7,6 +7,28 @@
 @stop
 
 {{ Asset::queue('validate', 'js/validate/validate.min.js', 'jquery') }}
+{{ Asset::queue('bootstrap-datepicker', 'js/datepicker/datepicker.js', ['jquery', 'bootstrap']) }}
+{{ Asset::queue('datepicker', 'js/datepicker/datepicker.css') }}
+{{ Asset::queue('jasny', '/js/jasny-bootstrap/js/inputmask.js', ['jquery', 'bootstrap']) }}
+
+@section('scripts')
+@parent
+
+<script type="text/javascript">
+	$(document).ready(function( $ ) {
+	  $('#user_profile_birthday').datepicker({
+	  	format: "mm/d/yyyy",
+	  	startView: 2,
+	  	autoclose: true
+	  });
+
+	  $('#user_profile_birthday').inputmask({
+	    mask: '99/99/9999'
+	  })
+	});
+</script>
+
+@stop
 
 {{-- bread crumbs --}}
 @section('breadCrumbs')
