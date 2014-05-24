@@ -816,12 +816,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:cartalyst/media.git",
-                "reference": "ec8d10594cbfa00785484b43265e09e429f483a4"
+                "reference": "3c9fe6fae8b006cf0721756798028aad4339f4e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/media/zipball/ec8d10594cbfa00785484b43265e09e429f483a4",
-                "reference": "ec8d10594cbfa00785484b43265e09e429f483a4",
+                "url": "https://api.github.com/repos/cartalyst/media/zipball/3c9fe6fae8b006cf0721756798028aad4339f4e6",
+                "reference": "3c9fe6fae8b006cf0721756798028aad4339f4e6",
                 "shasum": ""
             },
             "require": {
@@ -880,10 +880,10 @@
                 "php"
             ],
             "support": {
-                "source": "https://github.com/cartalyst/media/tree/feature/refactor",
+                "source": "https://github.com/cartalyst/media/tree/master",
                 "issues": "https://github.com/cartalyst/media/issues"
             },
-            "time": "2014-05-23 01:09:13"
+            "time": "2014-05-23 23:35:21"
         },
         {
             "name": "cartalyst/nested-sets",
