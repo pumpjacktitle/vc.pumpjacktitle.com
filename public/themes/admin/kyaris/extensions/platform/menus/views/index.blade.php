@@ -148,5 +148,5 @@
 @include('platform/menus::grid/results')
 @include('platform/menus::grid/pagination')
 @include('platform/menus::grid/filters')
-@include('platform/menus::grid/no-results')
+@include('platform/menus::grid/no_results')
 @stop
