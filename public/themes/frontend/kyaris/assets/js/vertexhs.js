@@ -3,6 +3,7 @@ $(function() {
     //===== jQuery validate defaults =====//
     if ($.fn.validate) {
         $(".validate").validate({
+            ignore: ':hidden:not([class~=selectized]),:hidden > .selectized, .selectize-control .selectize-input input',
             highlight: function(element) {
                 $(element).closest('.form-group').addClass('has-error');
             },
@@ -53,4 +54,30 @@ $(function() {
         }
     });
 
+    /**************************
+     * Tags                   *
+     **************************/
+
+     $('.tags').each(function(){
+
+         var $self = $(this), $data = $self.data();
+
+         $self.tagsInput({
+            width: '100%',
+            height: 'auto',
+            defaultText: $data.defaulttext
+         });
+     });
+
+     $('.selectize').each(function(){
+
+        var $self = $(this), $data = $self.data();
+
+        $self.selectize({
+           delimiter: ',',
+           persist: false,
+           hideSelected: true,
+           addPrecedence: true
+       });
+     });
 });

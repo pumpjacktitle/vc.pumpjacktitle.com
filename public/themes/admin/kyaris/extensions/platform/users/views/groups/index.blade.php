@@ -144,9 +144,9 @@
 </div>
 
 @include('platform/users::groups/grid/results')
-@include('partials/grid/pagination')
-@include('partials/grid/filters')
-@include('platform/users::groups/grid/no-results')
+@include('platform/users::groups/grid/pagination')
+@include('platform/users::groups/grid/filters')
+@include('platform/users::groups/grid/no_results')
 
 @stop
 

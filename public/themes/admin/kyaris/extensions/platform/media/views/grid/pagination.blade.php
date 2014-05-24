@@ -1,36 +1,24 @@
 <script type="text/template" data-grid="main" data-template="pagination">
-	
+
 	<% _.each(pagination, function(p) { %>
 
 		<div class="col-sm-4 hidden-xs">
-			<div class="btn-group dropup">
-
-				<button id="actions" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" disabled>
-					{{{ trans('general.bulk_actions') }}} <span class="caret"></span>
-				</button>
-
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" data-action="email">Email selected</a></li>
-					<li class="divider"></li>
-					<li><a href="#" data-action="delete"><span class="text-danger">{{{ trans('button.bulk.delete') }}}</span></a></li>
-				</ul>
-
-			</div>
 		</div>
 
 		<div class="col-sm-4 text-center">
 			<small class="text-muted inline m-t-sm m-b-sm">
-				{{{ trans('general.showing') }}} <%= p.pageStart %> {{{ trans('general.to') }}} <%= p.pageLimit %> {{{ trans('general.of') }}} <span class="total"><%= p.filteredCount %></span>
+				{{{ trans('general.showing') }}} <%= p.page_start %> {{{ trans('general.to') }}} <%= p.page_limit %> {{{ trans('general.of') }}} <span class="total"><%= p.filtered %></span>
 			</small>
 		</div>
 
 		<div class="col-sm-4 text-right text-center-xs">                
-			<ul class="pagination pagination-sm m-t-none m-b-none">
-				<% if (p.prevPage !== null) { %>
+			<ul class="pagination pagination-sm m-t-xs m-b-none">
+
+				<% if (p.previous_page !== null) { %>
 
 					<li><a href="#" data-grid="main" data-page="1"><i class="fa fa-angle-double-left"></i></a></li>
 
-					<li><a href="#" data-grid="main" data-page="<%= p.prevPage %>"><i class="fa fa-chevron-left"></i></a></li>
+					<li><a href="#" data-grid="main" data-page="<%= p.previous_page %>"><i class="fa fa-chevron-left"></i></a></li>
 
 				<% } else { %>
 
@@ -42,21 +30,21 @@
 
 				<%
 
-				var numPages = 11,
-					split    = numPages - 1,
+				var num_pages = 11,
+					split    = num_pages - 1,
 					middle   = Math.floor(split / 2);
 
 				var i = p.page - middle > 0 ? p.page - middle : 1,
-					j = p.totalPages;
+					j = p.pages;
 
-				j = p.page + middle > p.totalPages ? j : p.page + middle;
+				j = p.page + middle > p.pages ? j : p.page + middle;
 
 				i = j - i < split ? j - split : i;
 
 				if (i < 1)
 				{
 					i = 1;
-					j = p.totalPages > split ? split + 1 : p.totalPages;
+					j = p.pages > split ? split + 1 : p.pages;
 				}
 
 				%>
@@ -75,11 +63,11 @@
 
 				<% } %>
 
-				<% if (p.nextPage !== null) { %>
+				<% if (p.next_page !== null) { %>
 
-					<li><a href="#" data-grid="main" data-page="<%= p.nextPage %>"><i class="fa fa-chevron-right"></i></a></li>
+					<li><a href="#" data-grid="main" data-page="<%= p.next_page %>"><i class="fa fa-chevron-right"></i></a></li>
 
-					<li><a href="#" data-grid="main" data-page="<%= p.totalPages %>"><i class="fa fa-angle-double-right"></i></a></li>
+					<li><a href="#" data-grid="main" data-page="<%= p.pages %>"><i class="fa fa-angle-double-right"></i></a></li>
 
 				<% } else { %>
 
@@ -88,8 +76,11 @@
 					<li class="disabled"><span><i class="fa fa-angle-double-right"></i></span></li>
 
 				<% } %>
+
 			</ul>
+
 		</div>
+
 	<% }); %>
 
 </script>

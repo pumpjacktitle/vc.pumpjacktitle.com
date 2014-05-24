@@ -143,7 +143,7 @@
 </div>
 
 @include('platform/operations::extensions/grid/results')
-@include('partials/grid/pagination')
-@include('partials/grid/filters')
-@include('platform/operations::extensions/grid/no-results')
+@include('platform/operations::extensions/grid/pagination')
+@include('platform/operations::extensions/grid/filters')
+@include('platform/operations::extensions/grid/no_results')
 @stop

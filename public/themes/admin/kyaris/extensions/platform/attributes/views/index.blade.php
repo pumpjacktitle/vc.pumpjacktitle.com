@@ -163,9 +163,9 @@
 	</div>
 </div>
 
+@include('platform/attributes::grid/pagination')
+@include('platform/attributes::grid/filters')
 @include('platform/attributes::grid/results')
-@include('partials/grid/pagination')
-@include('partials/grid/filters')
-@include('partials/grid/no-results')
+@include('platform/attributes::grid/no_results')
 
 @stop

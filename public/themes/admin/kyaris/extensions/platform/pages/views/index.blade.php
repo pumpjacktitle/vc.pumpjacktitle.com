@@ -123,7 +123,7 @@
 							<span class="glyphicon fa fa-search form-control-feedback"></span>
 						</div>
 
-						@include('partials/grid/loading')
+						@include('platform/pages::grid/loading')
 					</form>
 				</div>
 
@@ -161,7 +161,7 @@
 </div>
 
 @include('platform/pages::grid/results')
-@include('partials/grid/pagination')
-@include('partials/grid/filters')
-@include('platform/pages::grid/no-results')
+@include('platform/pages::grid/pagination')
+@include('platform/pages::grid/filters')
+@include('platform/pages::grid/no_results')
 @stop
