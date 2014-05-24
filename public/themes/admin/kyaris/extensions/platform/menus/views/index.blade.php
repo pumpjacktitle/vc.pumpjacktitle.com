@@ -109,7 +109,7 @@
 							<span class="glyphicon fa fa-search form-control-feedback"></span>
 						</div>
 
-						@include('partials/grid/loading')
+						@include('platform/menus::grid/loading')
 					</form>
 				</div>
 
@@ -146,7 +146,7 @@
 </div>
 
 @include('platform/menus::grid/results')
-@include('partials/grid/pagination')
-@include('partials/grid/filters')
+@include('platform/menus::grid/pagination')
+@include('platform/menus::grid/filters')
 @include('platform/menus::grid/no-results')
 @stop
