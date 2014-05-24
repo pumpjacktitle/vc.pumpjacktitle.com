@@ -509,12 +509,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:cartalyst/data-grid.git",
-                "reference": "0b1f8d0627987a4f30e3a957ba0836b0dd4b3b3c"
+                "reference": "8895d4c52ea3190b7a32341709bada9bc3bf1409"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/data-grid/zipball/0b1f8d0627987a4f30e3a957ba0836b0dd4b3b3c",
-                "reference": "0b1f8d0627987a4f30e3a957ba0836b0dd4b3b3c",
+                "url": "https://api.github.com/repos/cartalyst/data-grid/zipball/8895d4c52ea3190b7a32341709bada9bc3bf1409",
+                "reference": "8895d4c52ea3190b7a32341709bada9bc3bf1409",
                 "shasum": ""
             },
             "require": {
@@ -582,10 +582,10 @@
                 "search"
             ],
             "support": {
-                "source": "https://github.com/cartalyst/data-grid/tree/master",
+                "source": "https://github.com/cartalyst/data-grid/tree/2.0",
                 "issues": "https://github.com/cartalyst/data-grid/issues"
             },
-            "time": "2014-05-23 01:45:38"
+            "time": "2014-05-24 00:59:28"
         },
         {
             "name": "cartalyst/dependencies",
