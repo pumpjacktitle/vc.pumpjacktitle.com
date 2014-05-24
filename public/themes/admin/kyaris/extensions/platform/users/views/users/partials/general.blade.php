@@ -55,8 +55,8 @@
 	<label for="activated" class="col-lg-2 control-label">{{{ trans('platform/users::users/form.activated') }}}</label>
 	<div class="col-lg-10">
 		<select class="form-control" name="activated" id="activated" required>
-			<option value="1"{{ Input::old('activated', $user->isActivated()) === true ? ' selected="selected"' : null }}>{{ trans('general.yes') }}</option>
-			<option value="0"{{ Input::old('activated', $user->isActivated()) === false ? ' selected="selected"' : null }}>{{ trans('general.no') }}</option>
+			<option value="1"{{ Input::old('activated', $isActivated) === true ? ' selected="selected"' : null }}>{{ trans('general.yes') }}</option>
+			<option value="0"{{ Input::old('activated', $isActivated) === false ? ' selected="selected"' : null }}>{{ trans('general.no') }}</option>
 		</select>
 
 		<span class="help-block">
