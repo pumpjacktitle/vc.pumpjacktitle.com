@@ -148,6 +148,7 @@ th.sortable.desc:after {
 
 .panel .table-striped > thead th.sortable.asc, .panel .table-striped > thead th.sortable.desc {
     background-color: #A1B2BF !important;
+    color: #FFFFFF;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .panel .table-striped > tbody > tr:nth-child(odd) > th {
