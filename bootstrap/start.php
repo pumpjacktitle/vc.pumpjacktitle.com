@@ -39,7 +39,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('daniels-mbp-2'),
+	'local' => array('homestead'),
 	'production' => array('devhost.kyaris.com')
 
 ));
